@@ -163,6 +163,22 @@
 
 </div><br>
 
+
+
+<div class="row">
+  <div class="col">
+    <input type="text" class="form-control" style="width:60%;margin-left: 25%;height:90px"  readonly > <br>
+
+    <label style="font-weight:bolder; margin-left: 25%" >NOMBRE, FIRMA Y SELLO DE QUIEN REMITE <button type="button" class="btn btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#Modal">BUSCAR </button></label>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" style="width:60%;margin-left: 10%;height:90px"  readonly>
+    <label style="font-weight:bolder; margin-left: 10%">NOMBRE, FIRMA Y SELLO DE QUIEN RECIBE</label>
+  </div>
+</div> <br>
+
+
+
 <div>
   <button type="button" class="btn btn-warning" style="margin-top: 2%;margin-left: 45%">DESCARGAR </button>
 
@@ -219,6 +235,58 @@
             <td>00000000000</td>
             <td>Thornton</td>
             <td><button  class="btn btn-success"> Agregar</button></td>
+
+          </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-danger"
+                data-bs-dismiss="modal">ok</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Responsable --------------------------------------------------------------------------------------->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="ModalLabel" style="margin-left: 25%">BUSCAR RESPONSABLE</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="col" >
+          <label style="font-weight:bolder; margin-left: 2%">NOMBRES</label>
+          <input type="text" class="form-control" style="width:60%;margin-left: 1%"  placeholder="Ingrese un nombre">
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-warning" style="margin-top:-17%;margin-left:75%" >BUSCAR </button> </div>
+
+      <div>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">NOMBRES</th>
+            <th scope="col"> TITULO</th>
+            <th scope="col">CARGO</th>
+
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+
+            <td>ALEXANDER</td>
+            <td>PSICOLOGIA</td>
+            <td>PSICOLOGO</td>
+            <td><button  class="btn btn-success">Agregar</button></td>
 
           </tr>
 
